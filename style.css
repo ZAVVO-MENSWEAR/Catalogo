@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout básico */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #6a0dad;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo img {
+  width: 120px;   /* tamanho maior */
+  height: auto;
+  margin-bottom: 8px;
+}
+
+header .logo h1 {
+  font-size: 28px;
+}
+
+/* Sidebar */
+.sidebar {
+  margin-top: 80px; /* espaço para o header */
+  width: 220px;
+  background: #4b0082;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo img {
+  width: 100px;   /* tamanho maior */
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.sidebar-logo h1 {
+  font-size: 22px;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+  background: #7b1fa2;
+}
+
+/* Conteúdo */
+main {
+  flex: 1;
+  padding: 100px 20px 20px 240px; /* espaço para header e sidebar */
+}
+
+/* WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-float i {
+  margin-right: 8px;
+}
